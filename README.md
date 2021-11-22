@@ -13,6 +13,7 @@ A senha deve possuir:
 ### Execução do Projeto
 1. Baixe a branch: git clone https://github.com/flaviorl-net/ValidPasswordAPI;
 2. Usando o Visual Studio ou Code, execute o projeto;
+* dotnet restore ./ValidPasswordAPI/src/ValidPassword.API/ValidPassword.API.csproj
 * dotnet run --project ./ValidPasswordAPI/src/ValidPassword.API/ValidPassword.API.csproj
 3. Faça um post para https://localhost:44351/api/v1/user ou https://localhost:5001/api/v1/user
 * Body: 

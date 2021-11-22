@@ -6,7 +6,7 @@
 	},
 	"item": [
 		{
-			"name": "https://localhost:44351/api/v1/validpassword?password=abcedfg1@M",
+			"name": "https://localhost:5001/api/v1/validpassword?password=abcedfg1@M",
 			"request": {
 				"method": "GET",
 				"header": [
@@ -17,7 +17,7 @@
 					}
 				],
 				"url": {
-					"raw": "https://localhost:44351/api/v1/validpassword?password=abcedfg1@M",
+					"raw": "https://localhost:5001/api/v1/validpassword?password=abcedfg1@M",
 					"protocol": "https",
 					"host": [
 						"localhost"

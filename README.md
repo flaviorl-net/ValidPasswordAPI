@@ -11,6 +11,22 @@ A senha deve possuir:
 * Não é permitido o uso de caracteres repetidos;
 
 ### Execução do Projeto
+1. Baixe a branch master de https://github.com/flaviorl-net/ValidPasswordAPI;
+2. Usando o Visual Studio, execute o projeto;
+3. Faça um post para https://localhost:44351/api/v1/user 
+Body: 
+{
+    "UserName": "usuario",
+    "Password": "12345"
+}
+4. Faça um post para https://localhost:44351/api/v1/user/login
+5. Body:
+{
+    "UserName": "usuario",
+    "Password": "12345"
+}
+6. Faça um get para https://localhost:44351/api/v1/validpassword?password=SUASENHA
+Utilize o token da etapa anterior no header Authorization (Bearer)
 
 ### Detalhes da Solução
 Utilização do Specification Pattern para permitir a facil inclusão e/ou remoção de regras de validação.

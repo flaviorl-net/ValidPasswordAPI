@@ -28,6 +28,8 @@ A senha deve possuir:
 6. Faça um get para https://localhost:44351/api/v1/validpassword?password=SUASENHA
 * Utilize o token da etapa anterior no header Authorization (Bearer)
 
+7. Se sua senha obedecer todas as regras você irá receber true e status code 200, inválida irá retornar false e status code 400 bad resquest.
+
 ### Detalhes da Solução
 Utilização do Specification Pattern para permitir a facil inclusão e/ou remoção de regras de validação.
 Cada regra para criação da senha, é representada por um objeto/classe dentro do padrão.

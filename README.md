@@ -12,7 +12,7 @@ A senha deve possuir:
 
 ### Execução do Projeto
 1. Baixe a branch master de https://github.com/flaviorl-net/ValidPasswordAPI;
-2. Usando o Visual Studio, execute o projeto;
+2. Usando o Visual Studio ou Code, execute o projeto;
 3. Faça um post para https://localhost:44351/api/v1/user 
 * Body: 
 {

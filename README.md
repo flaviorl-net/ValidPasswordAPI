@@ -26,7 +26,7 @@ A senha deve possuir:
     "Password": "12345"
 }
 6. Faça um get para https://localhost:44351/api/v1/validpassword?password=SUASENHA
-Utilize o token da etapa anterior no header Authorization (Bearer)
+* Utilize o token da etapa anterior no header Authorization (Bearer)
 
 ### Detalhes da Solução
 Utilização do Specification Pattern para permitir a facil inclusão e/ou remoção de regras de validação.

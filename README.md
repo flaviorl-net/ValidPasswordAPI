@@ -11,7 +11,7 @@ A senha deve possuir:
 * Não é permitido o uso de caracteres repetidos;
 
 ### Execução do Projeto
-1. Baixe a branch master de https://github.com/flaviorl-net/ValidPasswordAPI;
+1. Baixe a branch: git clone https://github.com/flaviorl-net/ValidPasswordAPI;
 2. Usando o Visual Studio ou Code, execute o projeto;
 3. Faça um post para https://localhost:44351/api/v1/user 
 * Body: 
@@ -29,6 +29,8 @@ A senha deve possuir:
 * Utilize o token da etapa anterior no header Authorization (Bearer)
 
 7. Se sua senha obedecer todas as regras você irá receber true e status code 200, inválida irá retornar false e status code 400 bad resquest.
+
+OBS: use https://localhost:44351/swagger/index.html para ter um overview das operações disponiveis.
 
 ### Detalhes da Solução
 Utilização do Specification Pattern para permitir a facil inclusão e/ou remoção de regras de validação.

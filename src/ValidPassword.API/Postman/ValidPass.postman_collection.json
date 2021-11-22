@@ -1,0 +1,103 @@
+{
+	"info": {
+		"_postman_id": "af24eacd-a5ab-4d8f-b3f3-c27c04179a04",
+		"name": "ValidPass",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://localhost:44351/api/v1/validpassword?password=abcedfg1@M",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImZsYXZpbyIsInJvbGUiOiJhZG0iLCJuYmYiOjE2Mzc2MDQ0MzAsImV4cCI6MTYzNzYxMTYzMCwiaWF0IjoxNjM3NjA0NDMwfQ.UYjw2usJIzmf4Bj0KOHuVN8aQN_9dAYAa594ysf7AK0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:44351/api/v1/validpassword?password=abcedfg1@M",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44351",
+					"path": [
+						"api",
+						"v1",
+						"validpassword"
+					],
+					"query": [
+						{
+							"key": "password",
+							"value": "abcedfg1@M"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:5001/api/v1/user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"UserName\": \"flavio\",\r\n    \"Password\": \"12345\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/v1/user",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"v1",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:5001/api/v1/user/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"UserName\": \"flavio\",\r\n    \"Password\": \"12345\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/v1/user/login",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

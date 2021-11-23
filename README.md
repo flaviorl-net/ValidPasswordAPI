@@ -13,25 +13,28 @@ A senha deve possuir:
 
 ### Execução do Projeto
 1. Baixe a branch: git clone https://github.com/flaviorl-net/ValidPasswordAPI;
+
 2. Usando o Visual Studio ou Code, execute o projeto;
 * dotnet restore ./ValidPasswordAPI/src/ValidPassword.API/ValidPassword.API.csproj
 * dotnet run --project ./ValidPasswordAPI/src/ValidPassword.API/ValidPassword.API.csproj
+
 3. Faça um post para https://localhost:44351/api/v1/user ou https://localhost:5001/api/v1/user
 * Body: 
 {
     "UserName": "usuario",
     "Password": "12345"
 }
+
 4. Faça um post para https://localhost:44351/api/v1/user/login ou https://localhost:5001/api/v1/user/login
 * Body:
 {
     "UserName": "usuario",
     "Password": "12345"
 }
+
 5. Faça um get para https://localhost:44351/api/v1/validpassword?password=SUASENHA ou https://localhost:5001/api/v1/validpassword?password=SUASENHA
 * Utilize o token da etapa anterior no header Authorization (Bearer)
-
-6. Se sua senha obedecer todas as regras você irá receber true e status code 200, inválida irá retornar false e status code 400 bad resquest.
+* Se sua senha obedecer todas as regras você irá receber true e status code 200, inválida irá retornar false e status code 400 bad resquest.
 
 OBS: use https://localhost:44351/swagger/index.html ou https://localhost:5001/swagger/index.html para ter um overview das operações disponiveis.
 

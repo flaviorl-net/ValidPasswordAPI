@@ -9,6 +9,7 @@ A senha deve possuir:
 * Pelo menos 1 letra maiúscula;
 * Pelo menos 1 caractere especial: !@#$%^&*()-+;
 * Não é permitido o uso de caracteres repetidos;
+* Não é permitido espaço em branco;
 
 ### Execução do Projeto
 1. Baixe a branch: git clone https://github.com/flaviorl-net/ValidPasswordAPI;
@@ -45,7 +46,7 @@ A solução foi dividida em 5 camadas/pacotes, conforme segue:
 * Logging: criação de log personalizado, a titulo de exemplo, poderia utilizar Serilog ou outro, gravação apenas em arquivo de texto para exemplificar;
 * Token: projeto para a geração do token, utilizado na autenticação via header;
 
-Para a validação da senha (resquest/response) é necessária apenas a camada de API e Domain, as demais camadas servem apenas de apoio, para oferecer outros serviços, como registro do usuário em Data, por exemplo.
+Para a validação da senha (resquest/response) é necessária apenas a camada de API e Domain, as demais camadas servem apenas de apoio, para oferecer outros serviços, como registro do usuário, por exemplo.
 
 #### Domain
 Projeto que possui regras de validação, como dito anteriormente utilizando o Specification Pattern.
@@ -80,7 +81,7 @@ public class PasswordValidation : FiscalBase<string>
 ```
 
 ### Decisão de Projeto
-A API, no que se trata ao registro do usuário, funcionalidade que utiliza armazenamento em memória, foi feito com o conceito de Data Driven, o contexto é criado pelo macanismo de injeção de depência direto no controller, para fins de simplificar esse processo, nesse momento.
+A API, no que se trata ao registro do usuário, funcionalidade que utiliza armazenamento em memória, foi feito com o conceito de Data Driven, o contexto é criado pelo macanismo de injeção de dependência direto no controller, para fins de simplificar esse processo, nesse momento.
 
 ### Testes
 Para a realização dos testes foram utilizadas as seguintes ferramentas e pacotes:

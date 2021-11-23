@@ -86,6 +86,8 @@ public class PasswordValidation : FiscalBase<string>
 ### Decisão de Projeto
 A API, no que se trata ao registro do usuário, funcionalidade que utiliza armazenamento em memória, foi feito com o conceito de Data Driven, o contexto é criado pelo macanismo de injeção de dependência direto no controller, para fins de simplificar esse processo, nesse momento.
 
+As validações são feitas em sua maioria com regular expression, cada regra foi definida com uma RE específica, ao invés de uma única RE que valida tudo. Feito dessa forma para que a adição ou a remoção de uma regra, seja feita de forma clara e rápida.
+
 ### Testes
 Para a realização dos testes foram utilizadas as seguintes ferramentas e pacotes:
 * XUnit;

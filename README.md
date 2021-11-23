@@ -56,16 +56,11 @@ Projeto que possui regras de validação, como dito anteriormente utilizando o S
 Para adicionar uma nova regra, crie uma classe conforme exemplo abaixo:
 
 ```csharp
-public class MinhaRegra : ISpecification<string> //Pode ser uma classe, basta ajustar o padrão.
+public class MinhaRegra : ISpecification<string> //Pode ser uma classe (default), basta ajustar o padrão.
 {
     public bool IsSatisfiedBy(string password)
     {
-        if (true)
-        {
-            return true;
-        }
-
-        return false;
+        throw new NotImplementedException();
     }
 }
 ```
